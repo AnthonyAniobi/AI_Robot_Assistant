@@ -28,16 +28,17 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
-  # bloc: ^8.1.2
   cupertino_icons: ^1.0.2
   equatable: ^2.0.5
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.3
+  fluttertoast: ^8.2.4
   path_provider: ^2.1.1
   permission_handler: ^11.1.0
   responsive_sizer: ^3.2.0
   wifi_iot: ^0.3.19
+  wifi_scan: ^0.4.1 
 
 dev_dependencies:
   flutter_lints: ^2.0.0
