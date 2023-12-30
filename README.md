@@ -7,6 +7,21 @@ This is an robot assistant which makes use of AI models built using Tensorflow a
 - ESP8266 Node module
 - Ultrasonic sensor
 
+
+## Project Description
+
+### Android App
+The project makes use of the following libraries:
+- Wifi IOT
+- Wifi Scan
+The project uses a gradle version of 18.1 this is to enable android support for scanning wifi connections. Also, an android sdk version of 26 and above is required for development of wifi functionality on Flutter. The statemanagement used for the project is `bloc`.
+
+***Homepage**: This page allows the user to connect various Wifi Access Points.
+
+<img src='./images/home1.png' width='100'>|
+<img src='./images/home2.png' width='100'>|
+<img src='./images/home3.png' width='100'>|
+
 ## Notes
 
 I intend to use just a few sensors for this project and am currently exploring position tracking witht the use the intensity of the wifi signal.

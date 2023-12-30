@@ -28,12 +28,15 @@ class _AppNavPageState extends State<AppNavPage>
       key: AppUtils.scaffoldKey,
       drawer: const RaDrawer(),
       bottomNavigationBar: const RaBottomNav(),
-      body: TabBarView(controller: AppUtils.tabController, children: const [
-        Homepage(),
-        ModelHomepage(),
-        SettingsHomepage(),
-        ControlHomepage(),
-      ]),
+      body: TabBarView(
+          controller: AppUtils.tabController,
+          physics: const NeverScrollableScrollPhysics(),
+          children: const [
+            Homepage(),
+            ModelHomepage(),
+            SettingsHomepage(),
+            ControlHomepage(),
+          ]),
     );
   }
 }
