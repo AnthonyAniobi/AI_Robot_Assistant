@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:remote_app/features/core/data/datasources/app_utils.dart';
-import 'package:remote_app/features/core/presentation/bloc/navigator/navigator_bloc.dart' as nv;
+import 'package:remote_app/features/core/presentation/blocs/navigator/navigator_bloc.dart' as nv;
 // import 'package:remote_app/features/core/presentation/bloc/navigator/navigator_bloc.dart';
 import 'package:remote_app/features/core/presentation/widgets/ra_color.dart';
 import 'package:remote_app/features/core/presentation/widgets/ra_spacer.dart';

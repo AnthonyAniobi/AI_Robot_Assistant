@@ -14,8 +14,8 @@ class AppNavPage extends StatefulWidget {
   State<AppNavPage> createState() => _AppNavPageState();
 }
 
-class _AppNavPageState extends State<AppNavPage> with SingleTickerProviderStateMixin{
-
+class _AppNavPageState extends State<AppNavPage>
+    with SingleTickerProviderStateMixin {
   @override
   void initState() {
     AppUtils.tabController = TabController(length: 4, vsync: this);
@@ -25,16 +25,15 @@ class _AppNavPageState extends State<AppNavPage> with SingleTickerProviderStateM
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: RaDrawer(),
-      bottomNavigationBar: RaBottomNav(),
-      body: TabBarView(
-        controller: AppUtils.tabController,
-        children: [
+      key: AppUtils.scaffoldKey,
+      drawer: const RaDrawer(),
+      bottomNavigationBar: const RaBottomNav(),
+      body: TabBarView(controller: AppUtils.tabController, children: const [
         Homepage(),
         ModelHomepage(),
         SettingsHomepage(),
         ControlHomepage(),
       ]),
-      );
+    );
   }
 }

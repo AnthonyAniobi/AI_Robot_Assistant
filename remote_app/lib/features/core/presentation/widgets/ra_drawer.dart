@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:remote_app/features/core/presentation/bloc/navigator/navigator_bloc.dart' as nv;
+import 'package:remote_app/features/core/data/datasources/app_utils.dart';
+import 'package:remote_app/features/core/presentation/blocs/navigator/navigator_bloc.dart' as nv;
 import 'package:remote_app/features/core/presentation/widgets/ra_color.dart';
 import 'package:remote_app/features/core/presentation/widgets/ra_spacer.dart';
 import 'package:remote_app/features/core/presentation/widgets/ra_text.dart';
@@ -36,6 +37,8 @@ class RaDrawer extends StatelessWidget {
         return InkWell(
           onTap: (){
             context.read<nv.NavigatorBloc>().add(nv.ChangeTabIndex(index));
+            AppUtils.tabController.animateTo(index);
+            AppUtils.scaffoldKey.currentState?.closeDrawer();
           },
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 4.w, vertical: 2.w),
