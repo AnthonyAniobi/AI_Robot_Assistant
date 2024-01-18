@@ -70,6 +70,6 @@ class WifiService {
   }
 
   // static Future checkConnected()async{
-  //   WiFiForIoTPlugin.getSSID()
+  //   WiFiForIoTPlugin.
   // }
 }
