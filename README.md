@@ -16,14 +16,21 @@ The project makes use of the following libraries:
 - Wifi Scan
 The project uses a gradle version of 18.1 this is to enable android support for scanning wifi connections. Also, an android sdk version of 26 and above is required for development of wifi functionality on Flutter. The statemanagement used for the project is `bloc`.
 
-***Homepage**: This page allows the user to connect various Wifi Access Points.
+**Homepage**: This page allows the user to connect various Wifi Access Points.
 
-<img src='./images/home1.png' width='100'>|
-<img src='./images/home2.png' width='100'>|
-<img src='./images/home3.png' width='100'>|
+### Mobile Application
+
+<img src='https://res.cloudinary.com/aniobi/image/upload/v1730301514/hardware_projects/robot_assistant/1.png' width='150'>
+<img src='https://res.cloudinary.com/aniobi/image/upload/v1730301514/hardware_projects/robot_assistant/2.png' width='150'>
+<img src='https://res.cloudinary.com/aniobi/image/upload/v1730301514/hardware_projects/robot_assistant/3.png' width='150'>
+
+### Hardware setup
+
+<img src='https://res.cloudinary.com/aniobi/image/upload/v1730301514/hardware_projects/robot_assistant/4.png' height='250'>
+<img src='https://res.cloudinary.com/aniobi/image/upload/v1730301514/hardware_projects/robot_assistant/5.png' height='250'>
+<img src='https://res.cloudinary.com/aniobi/image/upload/v1730301514/hardware_projects/robot_assistant/6.png' height='250'>
+
 
 ## Notes
-
-I intend to use just a few sensors for this project and am currently exploring position tracking witht the use the intensity of the wifi signal.
 The mobile device performs computation on the signals and data gotten from the microntroller and controls the movement and functionality of the device
 The mobile device makes use of ai models. Further AI models can be added to the device. The user decides how the AI model should interact with the data from the microntroler and the
